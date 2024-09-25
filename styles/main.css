@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+.chakra-petch-regular {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+@font-face {
+    font-family: 'videophreak';
+    src: url('/./sources/VIDEOPHREAK.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: videophreak;
+    width: 1280px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px auto;
+    background-image: url("/sources/Y2K-Aesthetic-HD-Wallpaper.png");
+    background-size: cover; 
+    background-position: center;
+}
+
+body::before {
+    content: ""; /* Necessário para criar um pseudoelemento */
+    position: absolute; /* Posiciona o pseudoelemento sobre o body */
+    width: 1280px; /* Largura total */
+    height: 110%; /* Altura total */
+    align-items: center;
+    top: 120px;
+    background: rgba(0, 38, 255, 0.40);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12.6px);
+    border: 1px solid rgba(0, 38, 255, 0.45);
+    z-index: 1;
+}
+
+body p,
+h1 {
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 2px #5871ff);
+}
+
+
+header {
+    position: relative;
+    align-items: center;
+    padding: 10px 0px;
+    background: rgba(0, 38, 255, 0.40);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12.6px);
+    border: 1px solid rgba(0, 38, 255, 0.45);
+    z-index: 2;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 70px;
+    margin-left: 30px;
+    line-height: 0px;
+    filter: drop-shadow(3px 3px 3px #5871ff);
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: auto;
+    color: #fff;
+    display: inline-block;
+    background: rgba(0, 38, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12.6px);
+    border: 1px solid rgba(0, 38, 255, 0.1);
+}
+
+header a:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow:0px 0px 24px 8px rgb(0, 38, 255);
+    -moz-box-shadow: 0px 0px 24px 8px rgba(0, 38, 255, 0.1);
+    box-shadow: 0px 0px 24px 8px rgba(0, 38, 255, 0.1);
+}
+
+header nav li {
+    display: inline;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact,
+#about {
+    position: relative;
+    margin-left: 50px;
+    z-index: 2;
+    margin-right: 50px;
+}
+
+#about .container .imgs {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* tamanho da img principal do about me */
+#about img {
+    height: 320px;
+    opacity: 0.9;
+    display: block;
+    margin: auto;
+    background: rgba(0, 38, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12.6px);
+    border: 1px solid rgba(0, 38, 255, 0.35);
+    -webkit-box-shadow:0px 0px 24px 8px rgb(0, 38, 255);
+    -moz-box-shadow: 0px 0px 24px 8px rgba(0, 38, 255, 0.4);
+    box-shadow: 0px 0px 24px 8px rgba(0, 38, 255, 0.4);
+}
+#about img:hover{
+    transform: scale(1.1);
+}
+/* tamanho da img contact */
+#contact img {
+    height: 32px;
+}
+#contact a {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+textarea,
+button {
+    font-family: videophreak;
+    text-align: center;
+    margin-bottom: 10px;
+    padding:5px;
+    color: #fff;
+    width: 200px; 
+    background: rgba(0, 38, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(12.6px);
+    border: 1px solid rgba(0, 38, 255, 0.1);
+    box-sizing: border-box;
+}
+
+form input:hover,
+textarea:hover,
+button:hover {
+    transform: scale(1.2); /* Scale to 110% on hover */
+}
+
+
+input:focus,
+textarea:focus {
+    outline-color: rgba(0, 38, 255, 0.1);
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 15px
+}
+form textarea {
+    resize: none;
+}
+
+#contact .social-midia {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contact .social-midia a {
+    margin-right: 20px;
+}
+
+#contact .social-midia a:hover {
+    transform: scale(1.4);
+}
